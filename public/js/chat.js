@@ -41,6 +41,24 @@ socket.on('message', (message) => {
         createdAt: moment(message.createdAt).format('h:mm A MMM YYYY')
     })
     $messages.insertAdjacentHTML('beforeend', html)
+    const bg = document.getElementById('bg')
+    bg.style.backgroundColor = '#333333'
+    const element = document.querySelectorAll('.message')
+    for (var i = 0, max = element.length; i < max; i++) {
+        element[i].style.backgroundColor = "#0052cc";
+        element[i].style.borderRadius = "15px";
+        element[i].style.marginRight = "50%";
+        element[i].style.marginLeft = "0";
+        element[i].style.color = "black";
+    }
+    var myStringArray = document.getElementsByClassName(username.toLowerCase());
+    for (var i = 0, max = myStringArray.length; i < max; i++) {
+        myStringArray[i].style.backgroundColor = "aqua";
+        myStringArray[i].style.borderRadius = "15px";
+        myStringArray[i].style.marginRight = "0";
+        myStringArray[i].style.marginLeft = "50%";
+        myStringArray[i].style.color = "black";
+    }
     autoscroll()
 })
 
@@ -52,6 +70,24 @@ socket.on('locationMessage', (message) => {
         createdAt: moment(message.createdAt).format('h:mm A MMM YYYY')
     })
     $messages.insertAdjacentHTML('beforeend', html)
+    const bg = document.getElementById('bg')
+    bg.style.backgroundColor = '#333333'
+    const element = document.querySelectorAll('.message')
+    for (var i = 0, max = element.length; i < max; i++) {
+        element[i].style.backgroundColor = "#0052cc";
+        element[i].style.borderRadius = "15px";
+        element[i].style.marginRight = "50%";
+        element[i].style.marginLeft = "0";
+        element[i].style.color = "black";
+    }
+    var myStringArray = document.getElementsByClassName(username.toLowerCase());
+    for (var i = 0, max = myStringArray.length; i < max; i++) {
+        myStringArray[i].style.backgroundColor = "aqua";
+        myStringArray[i].style.borderRadius = "15px";
+        myStringArray[i].style.marginRight = "0";
+        myStringArray[i].style.marginLeft = "50%";
+        myStringArray[i].style.color = "black";
+    }
     autoscroll()
 })
 

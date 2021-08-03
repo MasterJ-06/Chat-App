@@ -11,7 +11,7 @@
 
             </div>
 
-            <div class="chat__main">
+            <div class="chat__main" id="bg">
                 <div id="messages" class="chat__messages"></div>
 
                 <div class="compose">
@@ -25,20 +25,20 @@
         </div>
 
         <script id="message-template" type="text/html">
-            <div class="message">
+            <div class="message {{username}}">
                 <p>
                     <span class="message__name">{{username}}</span>
-                    <span class="message__meta">{{createdAt}}</span>
+                    <span class="message__meta" style="color: rgb(0, 0, 0);">{{createdAt}}</span>
                 </p>
                 <p>{{message}}</p>
             </div>
         </script>
 
         <script id="location-template" type="text/html">
-            <div class="message" id="sidebar">
+            <div class="message {{username}}" id="sidebar">
                 <p>
                     <span class="message__name">{{username}}</span>
-                    <span class="message__meta">{{createdAt}}</span>
+                    <span class="message__meta" style="color: rgb(0, 0, 0);">{{createdAt}}</span>
                 </p>
                 <p><a href="{{url}}" target="_blank">My Current Location</a></p>
             </div>
