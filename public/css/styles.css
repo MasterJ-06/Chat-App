@@ -10,6 +10,17 @@ html {
     font-size: 16px;
 }
 
+.file {
+    border: none !important;
+    width: 1% !important;
+    margin: 0 !important;
+}
+
+img {
+    max-width: 50%;
+    margin-left: 24%;
+}
+
 p {
     padding-left: 10px;
     word-break: break-word;
